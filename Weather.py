@@ -14,7 +14,7 @@ btn2_k = types.KeyboardButton('Узнать погоду на сайте 🌐')
 btn3_k = types.KeyboardButton('Нужна помощь ⚙')
 markup_keyboard.row(btn2_k, btn3_k)
 
-bot = telebot.TeleBot('6392265820:AAEa-D1Ak2NMkmhJfRZsNceCHNHXTpHq0V0')
+bot = telebot.TeleBot(open("bot.txt").readline().strip())
 
 @bot.message_handler(content_types=["audio", "document", "photo", "sticker", "video", "video_note", "voice", "location", "contact",
                  "new_chat_members", "left_chat_member", "new_chat_title", "new_chat_photo", "delete_chat_photo",
@@ -77,6 +77,7 @@ def info(message):
 
 
 bot.polling(none_stop=True)
+
 
 
 
