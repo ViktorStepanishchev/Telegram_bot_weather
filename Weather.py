@@ -5,7 +5,7 @@ import requests
 from telebot import types
 import json
 
-API = 'c0ecc18fdeb54628f312943586f2c573'
+API = ''
 
 markup_keyboard = types.ReplyKeyboardMarkup()
 btn1_k = types.KeyboardButton('Узнать погоду от бота 🤖')
